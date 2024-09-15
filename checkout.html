@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="tophead_background">
+        <div id="tophead">
+            <div id="login">
+                <i class="fa-solid fa-lock"></i>
+                <p><a href="login.html">LOG IN</a>/<a href="login.html">SIGN UP</a></p>
+            </div>
+            <div id="cheakout">
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <a href="">CHECKOUT</a>
+            </div>
+        </div>
+    </div>
+    <div id="mainheadborder">
+    <div id="mainhead">
+        <a href="index.html"><h1>FASHION <span>STORES</span></h1></a>
+        <div id="searchandcart">
+        <form action="">
+            <input type="search" placeholder="Search by product">
+        </form>
+        <span></span>
+        <div id="cart">
+            <a href="checkout.html">
+            <i class="fa-solid fa-cart-plus"></i>
+            <div id="carttext">
+                <h4>SHOPPING CART</h4>
+                <span>0</span>
+            </div>
+            </a>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div id="backgroundnav">
+    <nav>
+        <ul class="mainnav">
+            <li class="hideOnMobile"><a href="index.html">HOME PAGE</a></li>
+            <li class="hideOnMobile"><a href="#section2">CATEGORY</a></li>
+            <li class="hideOnMobile"><a href="product1.html">PRODUCTS</a></li>
+            <li class="hideOnMobile"><a href="contact_us_page.html">CONTACT US</a></li>
+            <li class="menu-button" onclick=showSidebar()><i class="fa-solid fa-bars"></i></li>
+        </ul>
+        <ul class="downdropbar">
+            <li onclick=hideSidebar()><i class="fa-solid fa-x"></i></li>
+            <li><a href="index.html">HOME PAGE</a></li>
+            <li><a href="#section2">CATEGORY</a></li>
+            <li><a href="product1.html">PRODUCTS</a></li>
+            <li><a href="contact_us_page.html">CONTACT US</a></li>
+        </ul>  
+    </nav>
+    </div>
+    <div class="container">
+        <div class="cart-section">
+            <h2 class="h">Your Cart</h2>
+            <div class="cart-items">
+                <div class="product" data-price="10.00">
+                    <img src="images/1.png" alt="Product 1" class="product-image">
+                    <div class="product-details">
+                        <p>Product 1 - $10.00</p>
+                        <div class="quantity-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" value="1" class="quantity" readonly>
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product" data-price="15.00">
+                    <img src="images/p1.jpg" alt="Product 2" class="product-image">
+                    <div class="product-details">
+                        <p>Product 2 - $15.00</p>
+                        <div class="quantity-controls">
+                            <button class="decrement">-</button>
+                            <input type="number" value="1" class="quantity" readonly>
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="total">
+                <p>Total: $<span id="totalPrice">25.00</span></p>
+            </div>
+        </div>
+
+        <form id="checkout-form">
+            <h1 class="h">Checkout</h1>
+            
+            <h2 class="h">Customer Information</h2>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <h2 class="h">Shipping Address</h2>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <div class="address-details">
+                <div>
+                    <label for="floor">Floor Number:</label>
+                    <input type="number" id="floor" name="floor" required class="number">
+                </div>
+                <div>
+                    <label for="apartment">Apartment Number:</label>
+                    <input type="number" id="apartment" name="apartment" required class="number">
+                </div>
+            </div>
+
+            <h2 class="h">Payment Information</h2>
+            <label for="card-name">Name on Card:</label>
+            <input type="text" id="card-name" name="card-name" required>
+
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required>
+
+            <label for="expiry-date">Expiry Date:</label>
+            <input type="month" id="expiry-date" name="expiry-date" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <button type="submit" class="button2">Place Order</button>
+        </form>
+    </div>
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="footer">
+            <div>
+                <a href="index.html"><h1>FASHION <span>STORE</span></h1></a>
+                <div id="Subscribe">Subscribe Now</div>
+                <label for="email"><i class="fa-solid fa-envelope"></i></label>
+                <input id="email" type="email" placeholder="Enter Your Email">
+                <br>
+                <button>Subscribe</button>
+            </div>
+            <div>
+                <h2>Information</h2>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">More Search</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Events</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Helpful Links</h2>
+                <ul>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Terms and Condition</a></li>
+                    <li><a href="">Privacy Policy</a></li> 
+                </ul>
+            </div>
+            <div>
+                <h2>Our Services</h2>
+                <ul>
+                    <li><a href="">Brands List</a></li>
+                    <li><a href="">Order</a></li>
+                    <li><a href="">Return & Exchange</a></li>
+                    <li><a href="">Fashion list</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+                <div class="contact_Us">
+                    <ul>
+                        <li class="icon facebook">
+                           <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="icon twitter">
+                            <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li class="icon instagram">
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="icon github">
+                            <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li class="icon youtube">
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <title>product page</title>
+    <link rel="stylesheet" href="css/productm.css">
+    <title>Fashion Store</title>
+    <link rel="icon" href="images/blank-1886008_1280.png">
+    <!--Normalize CSS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="tophead_background">
+        <div id="tophead">
+            <div id="login">
+                <i class="fa-solid fa-lock"></i>
+                <p><a href="login.html">LOG IN</a>/<a href="login.html">SIGN UP</a></p>
+            </div>
+            <div id="cheakout">
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <a href="checkout.html">CHECKOUT</a>
+            </div>
+        </div>
+    </div>
+    <div id="mainheadborder">
+    <div id="mainhead">
+        <a href="homepage.html"><h1>FASHION <span>STORES</span></h1></a>
+        <div id="searchandcart">
+        <form action="">
+            <input type="search" placeholder="Search by product">
+        </form>
+        <span></span>
+        <div id="cart">
+            <a href="checkout.html">
+            <i class="fa-solid fa-cart-plus"></i>
+            <div id="carttext">
+                <h4>SHOPPING CART</h4>
+                <span>0</span>
+            </div>
+            </a>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div id="backgroundnav">
+    <nav>
+        <ul class="mainnav">
+            <li class="hideOnMobile"><a href="homepage.html">HOME PAGE</a></li>
+            <li class="hideOnMobile"><a href="#section2">CATEGORY</a></li>
+            <li class="hideOnMobile"><a href="product1.html">PRODUCTS</a></li>
+            <li class="hideOnMobile"><a href="contact_us_page.html">CONTACT US</a></li>
+            <li class="menu-button" onclick=showSidebar()><i class="fa-solid fa-bars"></i></li>
+        </ul>
+        <ul class="downdropbar">
+            <li onclick=hideSidebar()><i class="fa-solid fa-x"></i></li>
+            <li><a href="homepage.html">HOME PAGE</a></li>
+            <li><a href="#section2">CATEGORY</a></li>
+            <li><a href="product1.html">PRODUCTS</a></li>
+            <li><a href="contact_us_page.html">CONTACT US</a></li>
+        </ul>  
+    </nav>
+    </div>
+       <div class="main">
+          <div class="contain">
+                    <div class="image">
+                        <img src="images/womens/WhatsApp Image 2024-09-10 at 02.38.17_b72cafc3.jpg" alt="logo testing" width="690px" height="780px">
+                    </div>
+                    <div class="Information">
+                          <h1>
+                            Girls Jordan Shoes
+                          </h1>
+                          <span>
+                            <i class="fa-solid fa-fire"></i> 14 Items sold in last 24 hours
+                          </span>
+                          <p>Nunc vehicula quam semper odio varius tincidunt. Vestibulum ante<br/> ipsum primis in faucibus orci luctus et ultrices posue.</p>
+                          <p>$. 44.00</p>
+                         <div>Product Type :Loofers Running Shoes</div> 
+                          <div class="stock">6 in stock</div>
+                          <p>Color: White and Purple</p>
+                          <div class="colors"> <div class="color"></div></div>
+                         <p>Sole Material: Rubber </p>
+                         <div class="label">Rubber</div>
+                         <p>Shaft Height: Ankle</p>
+                         <div class="label">Ankle</div>
+                    <div class="div-quantity">
+                         <div class="quantity">
+                            <button class="decrement">-</button>
+                            <input type="number" value="1" readonly id="quantityInput">
+                            <button class="increment">+</button>  
+                        </div>
+                    <div class="buy"><a href="checkout.html" style="text-decoration: none; color: white;"> BUY IT NOW </a></div></div>
+                    <div class="total">
+                        <h2>Total: $<span id="totalPrice"class="price" price="44">44.00</span></h2>
+                    </div>
+                    
+                    <div class=details>
+                    <div class="line" style="margin-bottom: 20px;">_______________________________________________________________</div>
+                    <div class="details"><h3><i class="fa-solid fa-truck"></i> Estimated delivery: 5-7 Days from order date.</h3></div>
+                    <div class="details"><h3><i class="fa-solid fa-rectangle-list"></i>Free Shipping & Returns: On orders above $50</h3></div>
+                    </div>
+                    
+          </div></div>
+                    <div class="contact-us">
+                        <h2>Let us know about your query!</h2>
+                      <h3><a href="contact_us_page.html">CONTACT US</a></h3>  
+                    </div>
+                </div>
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="footer">
+            <div>
+                <a href=""><h1>FASHION <span>STORE</span></h1></a>
+                <div id="Subscribe">Subscribe Now</div>
+                <label for="email"><i class="fa-solid fa-envelope"></i></label>
+                <input id="email" type="email" placeholder="Enter Your Email">
+                <br>
+                <button>Subscribe</button>
+            </div>
+            <div>
+                <h2>Information</h2>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">More Search</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Events</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Helpful Links</h2>
+                <ul>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Terms and Condition</a></li>
+                    <li><a href="">Privacy Policy</a></li> 
+                </ul>
+            </div>
+            <div>
+                <h2>Our Services</h2>
+                <ul>
+                    <li><a href="">Brands List</a></li>
+                    <li><a href="">Order</a></li>
+                    <li><a href="">Return & Exchange</a></li>
+                    <li><a href="">Fashion list</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+                <div class="contact_Us">
+                    <ul>
+                        <li class="icon facebook">
+                           <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="icon twitter">
+                            <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li class="icon instagram">
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="icon github">
+                            <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li class="icon youtube">
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/product-all.js"></script>
+</body>
+</html>
