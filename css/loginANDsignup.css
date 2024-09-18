@@ -395,8 +395,8 @@ main {
     }
     .WB button {
         transform: translate(6px);
-        width: 88px;
-        font-size: 8px;
+        width: 84px;
+        font-size: 7px;
     }
 
     .WB button:hover {
